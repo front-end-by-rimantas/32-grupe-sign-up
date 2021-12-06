@@ -25,6 +25,27 @@ body {
     padding: 40px;
     margin-top: 20px;
     background-color: #494eac;
+    color: #fff;
+}
+
+.main-title {
+    display: inline-block;
+    width: 100%;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.bottom-links {
+    display: inline-block;
+    width: 100%;
+}
+
+.bottom-links > .link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.bottom-links > .symbol {
 }
 
 .right-column {
