@@ -25,6 +25,10 @@ body {
     padding: 40px;
     margin-top: 20px;
     background-color: #494eac;
+    background-image: url(../img/hill.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
