@@ -9,27 +9,57 @@ body * {
 }
 
 body {
-    background-color: #00afcc;
+    background-color: rgb(73, 76, 154);
+    background: linear-gradient(
+        41deg,
+        rgba(73, 76, 154, 1) 0%,
+        rgb(72, 117, 201) 100%
+    );
+
+    background-color: red;
+    position: relative;
+    height: 100vh;
+}
+
+.background-div {
+    height: 100%;
+    background-image: url(../img/hill.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5rem);
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(1.5rem);
 }
 
 .container {
     display: inline-block;
     width: 800px;
-    margin-top: 80px;
-    margin-left: calc(50% - 400px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .left-column {
     width: 40%;
     float: left;
     padding: 40px;
-    margin-top: 20px;
     background-color: #494eac;
     background-image: url(../img/hill.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
 }
 
 .main-title {
@@ -41,7 +71,10 @@ body {
 
 .bottom-links {
     display: inline-block;
-    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
 }
 
 .bottom-links > .link {
@@ -54,20 +87,29 @@ body {
 
 .right-column {
     width: 60%;
-    float: left;
+    float: right;
     padding: 60px;
     background-color: #fff;
+    position: relative;
 }
 
 .close {
-    display: inline-block;
-    background-color: red;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    line-height: 54px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .right-column span {
     display: inline-block;
     padding: 15px;
-    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
     line-height: 20px;
     font-size: 18px;
 }
@@ -75,6 +117,8 @@ body {
 .right-column a {
     display: inline-block;
     padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 20px;
     font-size: 18px;
     text-decoration: none;
