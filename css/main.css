@@ -9,9 +9,33 @@ body * {
 }
 
 body {
-    background-color: #00afcc;
+    background-color: rgb(73, 76, 154);
+    background: linear-gradient(
+        41deg,
+        rgba(73, 76, 154, 1) 0%,
+        rgb(72, 117, 201) 100%
+    );
+
+    background-color: red;
     position: relative;
     height: 100vh;
+}
+
+.background-div {
+    height: 100%;
+    background-image: url(../img/hill.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5rem);
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(1.5rem);
 }
 
 .container {
